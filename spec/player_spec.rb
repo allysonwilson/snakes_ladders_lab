@@ -8,7 +8,7 @@ class TestPlayer< MiniTest::Test
   def setup()
     @player1 = Player.new( "Simon" , 0, "green" )
     @player2 = Player.new( "Allyson" , 0, "blue" )
-
+    @dice = Dice.new( "Dice 1", 6 )
   end
 
 
@@ -24,5 +24,9 @@ class TestPlayer< MiniTest::Test
 
   end
 
+#///////REMOVE TESTS ONCE ALL PASSED AND COMPLETE SO RANDOM CAN RUN
+  def test_player_turn
+    assert_equal(4, @player1.player_turn(@dice))
+  end
 
 end

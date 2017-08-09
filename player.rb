@@ -10,5 +10,9 @@ class Player
 
   end
 
+  def player_turn(dice)
+    return dice.roll()
+  end
+
 
 end

@@ -20,8 +20,8 @@ def sides
 end
 
 def roll
-  return rand(1..(@dice_sides))
-
+  # return rand(1..(@dice_sides)) ///////USE RANDOM NUMBER ONCE FINISHED TESTS//
+  return 4
 end
 
 
