@@ -16,7 +16,8 @@ class TestSpecialTiles< MiniTest::Test
   def test_snake_1_number
     assert_equal(1, @snake1.number)
   end
-
+  
   def test_player_on_snake
     assert_equal(13, @position )
+  end
 end

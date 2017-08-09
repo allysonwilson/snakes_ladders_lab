@@ -11,5 +11,10 @@ class SpecialTiles
    @player = player
   end
 
+  # def special_tile
+  #   if @position == @start_tile
+  #     @position = @end_tile
+  #   end
+  # end
 
 end

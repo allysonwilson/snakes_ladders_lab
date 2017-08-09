@@ -1,3 +1,4 @@
+
 class Player
 
   attr_reader(:name, :position, :color )
@@ -22,9 +23,9 @@ class Player
     return "Win" if @position == 100
   end
 
-  def special_tile
-    if @position == @start_tile
-      @position = @end_tile
-    end 
-  end
+  # def special_tile
+  #   if @position == @snake1()
+  #     @position = @end_tile
+  #   end
+  # end
 end

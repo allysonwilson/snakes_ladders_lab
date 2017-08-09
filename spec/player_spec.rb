@@ -9,7 +9,6 @@ class TestPlayer< MiniTest::Test
     @dice = Dice.new( "Dice 1", 6 )
     @player1 = Player.new( "Simon" , 0, "green", @dice )
     @player2 = Player.new( "Allyson" , 0, "blue", @dice )
-
   end
 
 
@@ -41,9 +40,9 @@ class TestPlayer< MiniTest::Test
     assert_equal( "Win" , player.win )
   end
 
-  def test_snake
-    player = Player.new( "Allyson" , 23 , "blue", @dice )
-    assert_equal( 13 , player.special_tile )
-end
+#   def test_snake
+#     player = Player.new( "Allyson" , 23 , "blue", @dice )
+#     assert_equal( 13 , player.special_tile )
+# end
 
 end
