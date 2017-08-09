@@ -21,4 +21,10 @@ class Player
   def win
     return "Win" if @position == 100
   end
+
+  def special_tile
+    if @position == @start_tile
+      @position = @end_tile
+    end 
+  end
 end

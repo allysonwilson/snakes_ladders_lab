@@ -40,4 +40,10 @@ class TestPlayer< MiniTest::Test
       player = Player.new( "Allyson" ,100, "blue", @dice )
     assert_equal( "Win" , player.win )
   end
+
+  def test_snake
+    player = Player.new( "Allyson" , 23 , "blue", @dice )
+    assert_equal( 13 , player.special_tile )
+end
+
 end
