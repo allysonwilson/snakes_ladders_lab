@@ -7,10 +7,15 @@ class TestBoard < MiniTest::Test
     @board = Board.new( [1..100] , [ "Simon" , "Allyson"] ) #@player#
   end
 
-  def test_
+  def test_tiles
 
-    assert_equal( )
+    assert_equal( [1..100] , @board.tiles)
   end
 
+  def test_players
+
+    assert_equal( ["Simon", "Allyson"], @board.players)
+
+  end
 
 end
