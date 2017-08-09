@@ -6,9 +6,10 @@ require_relative( "../board.rb" )
 class TestPlayer< MiniTest::Test
 
   def setup()
-    @player1 = Player.new( "Simon" , 0, "green" )
-    @player2 = Player.new( "Allyson" , 0, "blue" )
     @dice = Dice.new( "Dice 1", 6 )
+    @player1 = Player.new( "Simon" , 0, "green", @dice )
+    @player2 = Player.new( "Allyson" , 0, "blue", @dice )
+
   end
 
 
@@ -29,4 +30,14 @@ class TestPlayer< MiniTest::Test
     assert_equal(4, @player1.player_turn(@dice))
   end
 
+  def test_player_move
+    @player1.player_turn(@dice)
+    @player2.player_move()
+    assert_equal(4, @player2.player_move)
+  end
+
+  def test_player_win
+      player = Player.new( "Allyson" ,100, "blue", @dice )
+    assert_equal( "Win" , player.win )
+  end
 end
